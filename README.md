@@ -7,7 +7,7 @@ In R(DE_Deseq_AD.r),install"tximeta" and "DESeq2". Import the quantified data an
 ## L1000 data
 ### Summary
 
-The Library of Integrated Cellular Signatures (LINCS) is an NIH program which funds the generation of perturbational profiles across multiple cell and perturbation types, as well as read-outs, at a massive scale. We build a pipeline, in parallel with L1000 group, to process raw fluorescent intensity data into *z*-scores as perturbagen signatures, available at [L1000-bayesian](https://github.com/njpipeorgan/L1000-bayesian). The datasets cover three levels: Our Level 4 and Level 5 data are equivalent to Level 4 and Level 5 data provided by L1000. Pre-computed datasets covering a majority of LINCS L1000 Phase I and Phase II is available in [Downloads](#Downloads) and [Zenodo](https://zenodo.org/record/5559183#.YWJS39rMKUk).
+The Library of Integrated Cellular Signatures (LINCS) is an NIH program which funds the generation of perturbational profiles across multiple cell and perturbation types, as well as read-outs, at a massive scale. We build a pipeline, in parallel with L1000 group, to process raw fluorescent intensity data into *z*-scores as perturbagen signatures, available at [L1000-bayesian](https://github.com/njpipeorgan/L1000-bayesian). Our Level 4 and Level 5 data are equivalent to Level 4 and Level 5 data provided by L1000. Pre-computed datasets covering a majority of LINCS L1000 Phase I and Phase II is available in [Downloads](#Downloads) and [Zenodo](https://zenodo.org/record/5559183#.YWJS39rMKUk).
 
 
 
@@ -22,7 +22,7 @@ The Library of Integrated Cellular Signatures (LINCS) is an NIH program which fu
 |Cell information | [GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fcell%5Finfo%5F2017%2D04%2D28%2Etxt%2Egz)|
 |Gene information|[GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fgene%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz)|
 
-
+Full meta data are available from the publication by L1000 group: [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138) and [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742). They include perturbagen and cell line information associated with signature and instance IDs in the datasets.
 
 ### Data stuctures
 
@@ -34,11 +34,10 @@ The *z*-score results (as HDF5) are compatible with those published by L1000 gro
 
 * `/data` are the *z*-scores as a matrix.
 
-Full meta data are available from the publication by L1000 group: [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138) and [GSE92742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742). They include perturbagen and cell line information associated with signature and instance IDs in the datasets.
+
 
 
 ## Calculate enrichment score(ES)
 In python(calc_ES.py), use the up and down regulated gene as disease signature to calculate Enrichment Score(ES) against L1000 disease profiles. The drugs with lowest negative scores can be used as candidates to reverse the disease state.
 
-## results
 
