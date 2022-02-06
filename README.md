@@ -5,17 +5,22 @@ After getting RNA-seq data, first quantify them with Salmon(https://github.com/C
 
 In R(DE_Deseq_AD.r),install"tximeta" and "DESeq2". Import the quantified data and process them into differential expression profiles. Top differential expressed genes can then be used in next step as disease signatures.
 ## L1000 data
+### Summary
 
-The Library of Integrated Cellular Signatures (LINCS) is an NIH program which funds the generation of perturbational profiles across multiple cell and perturbation types, as well as read-outs, at a massive scale. The LINCS Center for Transcriptomics at the Broad Institute uses the L1000 high-throughput gene-expression assay to build a Connectivity Map which seeks to enable the discovery of functional connections between drugs, genes and diseases through analysis of patterns induced by common gene-expression changes.
+The Library of Integrated Cellular Signatures (LINCS) is an NIH program which funds the generation of perturbational profiles across multiple cell and perturbation types, as well as read-outs, at a massive scale. We build a pipeline, in parallel with L1000 group, to process raw fluorescent intensity data into *z*-scores as perturbagen signatures, available at [L1000-bayesian](https://github.com/njpipeorgan/L1000-bayesian). The datasets cover three levels: Our Level 4 and Level 5 data are equivalent to Level 4 and Level 5 data provided by L1000. Pre-computed datasets covering a majority of LINCS L1000 Phase I and Phase II is available in [Downloads](#Downloads) and [Zenodo](https://zenodo.org/record/5559183#.YWJS39rMKUk).
 
 
 
+
+### Downloads
 | Description                               | Download                                      |
 | ----------------------------------------- | --------------------------------------------- |
 | Plate control *z*-scores                  | [Bayesian_GSE70138_Level4_ZSPC_n335465x978.h5](http://callisto.astro.columbia.edu/files/L1000/Bayesian_GSE70138_Level4_ZSPC_n335465x978.h5)<br>[Bayesian_GSE92742_Level4_ZSPC_n1093191x978.h5](http://callisto.astro.columbia.edu/files/L1000/Bayesian_GSE92742_Level4_ZSPC_n1093191x978.h5)|
 | Combined *z*-scores by bio-replicates     | [Bayesian_GSE70138_Level5_COMPZ_n116218x978.h5](http://callisto.astro.columbia.edu/files/L1000/Bayesian_GSE70138_Level5_COMPZ_n116218x978.h5)<br>[Bayesian_GSE92742_Level5_COMPZ_n361481x978.h5](http://callisto.astro.columbia.edu/files/L1000/Bayesian_GSE92742_Level5_COMPZ_n361481x978.h5)|
-| signature IDs |[GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fsig%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz)|
-| perturbagen information  |[GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fpert%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz) |
+| Signature IDs |[GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fsig%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz)|
+| Perturbagen information  |[GSE70138_Broad_LINCS_pert_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fpert%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz)|
+|Cell information | [GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fcell%5Finfo%5F2017%2D04%2D28%2Etxt%2Egz)|
+|Gene information|[GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE70138&format=file&file=GSE70138%5FBroad%5FLINCS%5Fgene%5Finfo%5F2017%2D03%2D06%2Etxt%2Egz)|
 
 
 
