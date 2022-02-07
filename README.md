@@ -47,5 +47,6 @@ In python(calc_ES.py), use the up and down regulated gene as disease signature t
 
 ## Citation
 
-
+Oliveros, Giovanni, et al. "Multi-scale predictive modeling discovers Ibudilast as a polypharmacological agent to improve hippocampal-dependent spatial learning and memory and mitigate plaque and tangle pathology in a transgenic rat model of Alzheimer’s disease." bioRxiv (2021).
+Qiu, Yue, et al. "A Bayesian approach to accurate and robust signature detection on LINCS L1000 data." Bioinformatics 36.9 (2020): 2787-2795.
 
