@@ -1,7 +1,7 @@
 # L1000-repurposing
 Drug repurposing with L1000 data
 ## RNA-seq data processing 
-After getting RNA-seq data, first quantify them with Salmon(https://github.com/COMBINE-lab/salmon). 
+After getting RNA-seq data, first quantify them with [Salmon](https://github.com/COMBINE-lab/salmon). 
 
 In R(DE_Deseq_AD.r),install"tximeta" and "DESeq2". Import the quantified data and process them into differential expression profiles. See [guide](https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf) to using Deseq2 for more information.
 
@@ -48,5 +48,6 @@ In python(calc_ES.py), use the up and down regulated gene as disease signature t
 ## Citation
 
 Oliveros, Giovanni, et al. "Multi-scale predictive modeling discovers Ibudilast as a polypharmacological agent to improve hippocampal-dependent spatial learning and memory and mitigate plaque and tangle pathology in a transgenic rat model of Alzheimer’s disease." bioRxiv (2021).
+
 Qiu, Yue, et al. "A Bayesian approach to accurate and robust signature detection on LINCS L1000 data." Bioinformatics 36.9 (2020): 2787-2795.
 
