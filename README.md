@@ -47,12 +47,14 @@ The *z*-score results (as HDF5) are compatible with those published by L1000 gro
 
 ### Data Preparation for drug screening
 1. Download L1000 data.
-   Bayesian_GSE70138_Level5_COMPZ_n116218x978.h5, Bayesian_GSE92742_Level5_COMPZ_n361481x978.h5, 
+   Download the following files in folder L1000_data : Bayesian_GSE70138_Level5_COMPZ_n116218x978.h5, Bayesian_GSE92742_Level5_COMPZ_n361481x978.h5, GSE92742_Broad_LINCS_sig_info.txt.gz, GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz. Then unzip xxx_sig_info.txt.gz files. 
 2. Prepare up and down regulated genes.
-   The up and down regulated genes produced by Deseq2 or other pilelines. Note that the genes needs to be converted to official Gene Symbol. You can use a [converter](https://www.biotools.fr/human/refseq_symbol_converter) to do this.
+   The up and down regulated genes produced by Deseq2 or other pilelines. Save them in up_genes.csv and down_genes.csv seperately. Note that the genes needs to be converted to official Gene Symbol. You can use a [converter](https://www.biotools.fr/human/refseq_symbol_converter) to do this.
 
-### Calculate enrichment score(ES)
-In python(calc_ES.py), use the up and down regulated gene as disease signature to calculate Enrichment Score(ES) against L1000 profiles. The drugs with lowest negative Enirchment Scores can be used as candidates to reverse the disease state.
+### Calculate enrichment score(ES) and search for drug candidates
+Use our pipeline (L1000_repurposing.ipynb) to search for drug candidates. 
+
+Or in python(calc_ES.py), use the up and down regulated gene as disease signature to calculate Enrichment Score(ES) against L1000 profiles. The drugs with lowest negative Enirchment Scores can be used as candidates to reverse the disease state.
 
 ### Analysis your results
 The screening results will contain a long list of drugs. You can further check their experiment information, target or structure to find the best candidate.
