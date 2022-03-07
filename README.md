@@ -56,7 +56,7 @@ Use our pipeline (L1000_repurposing.ipynb) to search for drug candidates.
 
 Or in python(calc_ES.py), use the up and down regulated gene as disease signature to calculate Enrichment Score(ES) against L1000 profiles. The drugs with lowest negative Enirchment Scores can be used as candidates to reverse the disease state.
 
-### Analysis your results
+### Analyze your results
 The screening results will contain a long list of drugs. You can further check their experiment information, target or structure to find the best candidate.
 
 ## Citation
